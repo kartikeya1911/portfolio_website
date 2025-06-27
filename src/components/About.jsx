@@ -37,8 +37,8 @@ const About = () => {
   ];
 
   const stats = [
-    { number: "50+", label: "Projects Completed", icon: <Star className="w-6 h-6" /> },
-    { number: "3+", label: "Years Experience", icon: <Zap className="w-6 h-6" /> },
+    { number: "10+", label: "Projects Completed", icon: <Star className="w-6 h-6" /> },
+    { number: "Fresher", label: "Years Experience", icon: <Zap className="w-6 h-6" /> },
     { number: "15+", label: "Technologies", icon: <Code className="w-6 h-6" /> },
     { number: "100%", label: "Client Satisfaction", icon: <Heart className="w-6 h-6" /> }
   ];
@@ -126,13 +126,15 @@ const About = () => {
               </p>
             </div>
             
-            <motion.button
+            <motion.a
+              href="/KARTIKEYA_JAIN_RESUME.pdf"
+              download="Kartikeya_Jain_Resume.pdf"
               whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)" }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-2xl font-semibold shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 mt-8"
             >
               Download Resume
-            </motion.button>
+            </motion.a>
           </motion.div>
 
           <motion.div

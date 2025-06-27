@@ -64,20 +64,28 @@ const Hero = () => {
               transition={{ duration: 1, type: "spring", bounce: 0.5 }}
               className="relative w-40 h-40 mx-auto mb-8"
             >
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 p-1 animate-spin-slow">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-900 to-black flex items-center justify-center text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
-                  KJ
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 p-1">
+                <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-900 to-black flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="/src/IMAGE.jpg" 
+                    alt="Kartikeya Jain" 
+                    className="w-full h-full object-cover rounded-full"
+                    onError={(e) => {
+                      // Fallback to initials if image fails to load
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-900 to-black hidden items-center justify-center text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
+                    KJ
+                  </div>
                 </div>
               </div>
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute -top-2 -right-2"
-              >
+              <div className="absolute -top-2 -right-2">
                 <div className="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
                   <Sparkles className="w-4 h-4 text-white" />
                 </div>
-              </motion.div>
+              </div>
             </motion.div>
             
             <motion.h1 
@@ -127,9 +135,9 @@ const Hero = () => {
               className="flex justify-center space-x-6 mb-12"
             >
               {[
-                { icon: Github, href: "https://github.com", color: "from-gray-600 to-gray-800" },
-                { icon: Linkedin, href: "https://linkedin.com", color: "from-blue-600 to-blue-800" },
-                { icon: Mail, href: "mailto:kartikeya@example.com", color: "from-purple-600 to-pink-600" }
+                { icon: Github, href: "https://github.com/kartikeya1911", color: "from-gray-600 to-gray-800" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/kartikeyajain1911/", color: "from-blue-600 to-blue-800" },
+                { icon: Mail, href: "mailto:jainkartikeya9@gmail.com", color: "from-purple-600 to-pink-600" }
               ].map((social, index) => (
                 <motion.a
                   key={index}
@@ -162,14 +170,16 @@ const Hero = () => {
                 <ArrowDown className="w-5 h-5" />
               </motion.button>
               
-              <motion.button
+              <motion.a
+                href="/KARTIKEYA_JAIN_RESUME.pdf"
+                download="Kartikeya_Jain_Resume.pdf"
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(6, 182, 212, 0.3)" }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-2xl font-semibold shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 flex items-center space-x-2"
               >
                 <Download className="w-5 h-5" />
                 <span>Download Resume</span>
-              </motion.button>
+              </motion.a>
             </motion.div>
           </motion.div>
         </div>
