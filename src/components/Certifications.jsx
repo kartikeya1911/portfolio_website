@@ -11,14 +11,14 @@ const Certifications = () => {
 
   const certifications = [
     {
-      title: "Full Stack Web Development",
-      platform: "Meta Professional Certificate",
-      issuer: "Meta",
-      date: "March 2024",
-      image: "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=400",
-      verificationUrl: "https://coursera.org/verify/certificate",
+      title: "Deloitte Technology Job Simulation ",
+      platform: "Deloitte Australia",
+      issuer: "Deloitte",
+      date: "July 2025",
+      image: "./certificates/deloitte job simulation.png",
+      verificationUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_pFBaWiPSDMgmDwuq5_1752409970971_completion_certificate.pdf",
       featured: true,
-      skills: ["React", "Node.js", "Database Design", "API Development"]
+      skills: ["Python", "File System"]
     },
     {
       title: "AWS Solutions Architect",

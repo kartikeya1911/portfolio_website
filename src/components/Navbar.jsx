@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Moon, Sun, Menu, X, Sparkles } from 'lucide-react';
-import { useTheme } from '../contexts/ThemeContext';
+import { Menu, X, Sparkles } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
 
   const navItems = [
     { name: 'Home', href: '#home' },
@@ -88,26 +86,10 @@ const Navbar = () => {
                 />
               </motion.button>
             ))}
-            <motion.button
-              whileHover={{ scale: 1.1, rotate: 180 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={toggleTheme}
-              className="p-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
-            >
-              {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
-            </motion.button>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-2">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={toggleTheme}
-              className="p-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white"
-            >
-              {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-            </motion.button>
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

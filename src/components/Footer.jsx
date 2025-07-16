@@ -76,7 +76,7 @@ const Footer = () => {
             className="mb-8"
           >
             <div className="flex flex-wrap justify-center gap-3 text-xs text-gray-500">
-              {['React', 'Node.js', 'MongoDB', 'Express', 'TypeScript', 'Tailwind CSS', 'Framer Motion'].map((tech, index) => (
+              {['React', 'Node.js', 'MongoDB', 'Express', 'TypeScript', 'Tailwind CSS'].map((tech, index) => (
                 <motion.span
                   key={tech}
                   whileHover={{ scale: 1.1, color: '#a855f7' }}

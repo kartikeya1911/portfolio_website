@@ -15,11 +15,11 @@ const Skills = () => {
       icon: <Palette className="w-6 h-6" />,
       gradient: "from-pink-500 to-rose-500",
       skills: [
-        { name: "React", level: 95, color: "from-blue-400 to-blue-600" },
-        { name: "TypeScript", level: 90, color: "from-blue-500 to-indigo-600" },
-        { name: "Next.js", level: 85, color: "from-gray-600 to-gray-800" },
-        { name: "Tailwind CSS", level: 92, color: "from-cyan-400 to-teal-600" },
-        { name: "JavaScript", level: 95, color: "from-yellow-400 to-orange-500" }
+        //{ name: "HTML", level: 85, color: "from-green-400 to-green-800" },
+        { name: "React", level: 80, color: "from-blue-400 to-blue-600" },
+        { name: "JavaScript", level: 95, color: "from-blue-500 to-indigo-600" },
+        { name: "Tailwind CSS", level: 80, color: "from-cyan-400 to-teal-600" },
+        //{ name: "TypeScript", level: 65, color: "from-yellow-400 to-orange-500" }
       ]
     },
     {
@@ -29,9 +29,9 @@ const Skills = () => {
       skills: [
         { name: "Node.js", level: 90, color: "from-green-400 to-green-600" },
         { name: "Express.js", level: 88, color: "from-gray-500 to-gray-700" },
-        { name: "Python", level: 80, color: "from-blue-500 to-yellow-500" },
-        { name: "REST APIs", level: 92, color: "from-purple-400 to-purple-600" },
-        { name: "GraphQL", level: 75, color: "from-pink-400 to-purple-500" }
+        { name: "JavaScript", level: 80, color: "from-blue-500 to-yellow-500" },
+        //{ name: "REST APIs", level: 92, color: "from-purple-400 to-purple-600" },
+        //{ name: "GraphQL", level: 75, color: "from-pink-400 to-purple-500" }
       ]
     },
     {
@@ -40,10 +40,10 @@ const Skills = () => {
       gradient: "from-blue-500 to-cyan-500",
       skills: [
         { name: "MongoDB", level: 90, color: "from-green-500 to-green-700" },
-        { name: "PostgreSQL", level: 85, color: "from-blue-600 to-blue-800" },
-        { name: "Redis", level: 78, color: "from-red-500 to-red-700" },
+        { name: "MySQL", level: 85, color: "from-blue-600 to-blue-800" },
+        //{ name: "Redis", level: 78, color: "from-red-500 to-red-700" },
         { name: "Firebase", level: 82, color: "from-yellow-500 to-orange-600" },
-        { name: "Prisma", level: 80, color: "from-indigo-500 to-purple-600" }
+        //{ name: "Prisma", level: 80, color: "from-indigo-500 to-purple-600" }
       ]
     },
     {
@@ -54,8 +54,8 @@ const Skills = () => {
         { name: "Git", level: 95, color: "from-orange-500 to-red-600" },
         { name: "Docker", level: 80, color: "from-blue-400 to-blue-600" },
         { name: "AWS", level: 75, color: "from-yellow-600 to-orange-600" },
-        { name: "Jest", level: 85, color: "from-red-500 to-pink-600" },
-        { name: "Figma", level: 70, color: "from-purple-500 to-pink-500" }
+        //{ name: "Jest", level: 85, color: "from-red-500 to-pink-600" },
+        //{ name: "Figma", level: 70, color: "from-purple-500 to-pink-500" }
       ]
     }
   ];

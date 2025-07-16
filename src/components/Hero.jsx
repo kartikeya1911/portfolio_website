@@ -103,16 +103,16 @@ const Hero = () => {
               <Typewriter
                 options={{
                   strings: [
-                    '🚀 Full Stack Developer',
-                    '💻 MERN Stack Expert',
-                    '🎯 Problem Solver',
-                    '⚡ Tech Innovator',
-                    '🌟 Code Architect'
+                    ' Full Stack Developer',
+                    ' MERN Stack Expert',
+                    ' Problem Solver',
+                    ' Tech Innovator',
+                    ' Code Architect'
                   ],
                   autoStart: true,
                   loop: true,
-                  delay: 100,
-                  deleteSpeed: 50,
+                  delay: 70,
+                  deleteSpeed: 20,
                 }}
               />
             </div>
